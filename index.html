@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width; initial-scale=1.0">
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <style>
+
+@media only screen and (max-width: 600px) {
+        body {
+            box-sizing: border-box;
+        }
+        .swiper-container {
+            width: 500px;
+            height: 680px;
+            margin-top:200px;
+        }
+
+        h4 {
+            font-size: 12pt;
+        }
+
+        img {
+            width: 200px;
+            height: 500px;
+        }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 769px){
+
+        body {
+            box-sizing: border-box;
+        }
+
+        .swiper-container {
+            width: 600px;
+            height: 780px;
+            margin-top: 300px;
+        }
+
+        h4 {
+            font-size: 16pt;
+        }
+
+        img {
+            width: 300px;
+            height: 600px;
+        }
+}
+
+body {
+    background-color:#cdccd4;
+}
+
+.swiper-container {
+    width: 700px;
+    height: 880px;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #7d3290;
+}
+
+h4 {
+   text-decoration:underline;
+   color:#7d3290;
+   font-family: Brush Script MT;
+   font-size:20pt;
+}
+
+img {
+    width: 400px;
+    height: 700px;
+    border: solid;
+    border-color:#a4a3aa;
+}
+    </style>
+</head>
+<body>
+    <center>
+        <!-- Slider main container -->
+        <div class="swiper-container">
+
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><h4>Home page header</h4> <img src="images\Picture1.jpg" alt="Picture1"></div>
+                <div class="swiper-slide"><h4>Home page content</h4> <img src="images\Picture2.jpg" alt="Picture2"></div>
+                <div class="swiper-slide"><h4>Home page content</h4> <img src="images\Picture3.jpg" alt="Picture3"></div>
+                <div class="swiper-slide"><h4>Home page footer</h4> <img src="images\Picture4.jpg" alt="Picture4"></div>
+                <div class="swiper-slide"><h4>Home page menue</h4> <img src="images\Picture5.jpg" alt="Picture5"></div>
+                <div class="swiper-slide"><h4>Catalog page prodect</h4> <img src="images\Picture6.jpg" alt="Picture6"></div>
+                <div class="swiper-slide"><h4>Catalog page prodect</h4> <img src="images\Picture7.jpg" alt="Picture7"></div>
+                <div class="swiper-slide"><h4>Catalog page poredct</h4> <img src="images\Picture8.jpg" alt="Picture8"></div>
+                <div class="swiper-slide"><h4>Catalog page poredct</h4> <img src="images\Picture9.jpg" alt="Picture9"></div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev" style="color: #7d3290;"></div>
+            <div class="swiper-button-next" style="color: #7d3290;"></div>
+
+            <!-- If we need scrollbar
+            <div class="swiper-scrollbar"></div>
+        -->
+
+        </div>
+    </center>
+
+    <script>
+        var mySwiper = new Swiper('.swiper-container', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,
+            speed: 400,
+            spaceBetween: 100,
+
+            autoplay: {
+                delay: 5000,
+            },
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            // And if we need scrollbar
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+        });
+
+
+    </script>
+
+</body>
+</html>
